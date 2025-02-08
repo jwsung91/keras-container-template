@@ -1,9 +1,9 @@
-# keras-container-template
+# tf-container-template
 
-```
- docker build --no-cache --build-arg GPU_ENABLED=1 -t keras-gpu .
+```zsh
+./build.sh
 ```
 
-```
-docker run -it --rm --gpus all -p 8888:8888 keras-gpu
+```zsh
+docker run -it -p 8888:8888 -v $(pwd):/workspace tensorflow-container
 ```
