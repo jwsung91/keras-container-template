@@ -7,8 +7,7 @@ is_valid_base_image() {
 }
 
 if ! is_valid_base_image "$BASE_IMAGE"; then
-  echo "Invalid base image: $BASE_IMAGE"
-  echo "Change to tensorflow/tensorflow:2.15.0"
+  echo "Set to tensorflow/tensorflow:2.15.0"
   BASE_IMAGE=""
 fi
 
